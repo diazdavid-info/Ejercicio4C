@@ -21,7 +21,7 @@ public class DatosComunes {
 	
 	synchronized public void accion(int posicion) throws InterruptedException{
 		if(Thread.currentThread().getName().equals("add")){
-			while(Thread.interrupted() && (suma != 0 || resta != 0)){
+			while(Thread.interrupted() && (suma != 0 || resta != 0)){ 
 				System.out.println("duermo add");
 				wait();
 				System.out.println("Despierto add");
